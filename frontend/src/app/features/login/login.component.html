@@ -1,0 +1,62 @@
+<div class="login-container">
+  <div class="logo-container">
+    <img src="joinup_logo.png" alt="JoinUp" class="logo" />
+  </div>
+  <h1>{{ 'app.login' | translate }}</h1>
+
+  <div *ngIf="!showRegister()">
+    <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+      <div class="field">
+        <label for="email">{{ 'auth.email' | translate }}</label>
+        <input id="email" type="email" formControlName="email" [class.invalid]="form.controls.email.invalid && form.controls.email.touched" />
+      </div>
+      <div class="field">
+        <label for="password">{{ 'auth.password' | translate }}</label>
+        <input id="password" type="password" formControlName="password" [class.invalid]="form.controls.password.invalid && form.controls.password.touched" />
+      </div>
+      <button type="submit" [disabled]="loading() || form.invalid">{{ 'auth.loginButton' | translate }}</button>
+    </form>
+    <div class="register-link">
+      <p>{{ 'auth.noAccount' | translate }} <a (click)="toggleRegister()">{{ 'auth.registerHere' | translate }}</a></p>
+    </div>
+  </div>
+
+  <div *ngIf="showRegister()">
+    <h2>{{ 'auth.registerTitle' | translate }}</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="submitRegister()" novalidate>
+      <div class="field">
+        <label for="name">{{ 'auth.name' | translate }}</label>
+        <input id="name" type="text" formControlName="name" [class.invalid]="registerForm.controls.name.invalid && registerForm.controls.name.touched" />
+      </div>
+      <div class="field">
+        <label for="reg-email">{{ 'auth.email' | translate }}</label>
+        <input id="reg-email" type="email" formControlName="email" [class.invalid]="registerForm.controls.email.invalid && registerForm.controls.email.touched" />
+      </div>
+      <div class="field">
+        <label for="reg-password">{{ 'auth.password' | translate }}</label>
+        <input id="reg-password" type="password" formControlName="password" [class.invalid]="registerForm.controls.password.invalid && registerForm.controls.password.touched" />
+      </div>
+      <div class="field">
+        <label for="birthDate">{{ 'auth.birthDate' | translate }}</label>
+        <input id="birthDate" type="date" formControlName="birthDate" [class.invalid]="registerForm.controls.birthDate.invalid && registerForm.controls.birthDate.touched" />
+      </div>
+      <div class="field">
+        <label for="gender">{{ 'auth.gender' | translate }}</label>
+        <select id="gender" formControlName="gender" [class.invalid]="registerForm.controls.gender.invalid && registerForm.controls.gender.touched">
+          <option value="">{{ 'auth.selectGender' | translate }}</option>
+          <option value="male">{{ 'auth.genderMale' | translate }}</option>
+          <option value="female">{{ 'auth.genderFemale' | translate }}</option>
+          <option value="other">{{ 'auth.genderOther' | translate }}</option>
+          <option value="prefer_not_to_say">{{ 'auth.genderPreferNotToSay' | translate }}</option>
+        </select>
+      </div>
+      <button type="submit" [disabled]="loading() || registerForm.invalid">{{ 'auth.registerButton' | translate }}</button>
+    </form>
+    <div class="register-link">
+      <p><a (click)="toggleRegister()">{{ 'auth.backToLogin' | translate }}</a></p>
+    </div>
+  </div>
+
+  <div class="error" *ngIf="error()">{{ error() }}</div>
+  <div class="loading" *ngIf="loading()">{{ 'common.loading' | translate }}</div>
+</div>

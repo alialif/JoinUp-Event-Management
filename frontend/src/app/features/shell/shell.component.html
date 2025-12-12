@@ -1,0 +1,35 @@
+<div class="app-shell">
+  <header class="app-header">
+    <div class="brand" (click)="router.navigateByUrl('/events')">
+      <img src="joinup_favicon.png" alt="JoinUp" class="brand-logo" />
+      <span>JoinUp</span>
+    </div>
+    <div class="actions">
+      <select [value]="lang()" (change)="switchLang(($any($event.target).value))">
+        <option *ngFor="let l of languages" [value]="l">{{ l }}</option>
+      </select>
+      <span *ngIf="(currentUser$ | async) as user" class="user-name">{{ user.name }}</span>
+      <button *ngIf="(currentUser$ | async)" (click)="logout()">{{ 'app.logout' | translate }}</button>
+    </div>
+  </header>
+  <app-spinner></app-spinner>
+  <app-toast-container></app-toast-container>
+  <div class="app-layout" *ngIf="(currentUser$ | async) as user">
+    <aside class="sidebar" *hasRole="['admin']">
+      <nav class="sidebar-nav">
+        <a routerLink="/events" routerLinkActive="active" class="sidebar-link">
+          <span>{{ 'nav.events' | translate }}</span>
+        </a>
+        <a routerLink="/members" routerLinkActive="active" class="sidebar-link">
+          <span>{{ 'nav.users' | translate }}</span>
+        </a>
+      </nav>
+    </aside>
+    <main class="app-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  <main class="app-content" *ngIf="!(currentUser$ | async)">
+    <router-outlet></router-outlet>
+  </main>
+</div>

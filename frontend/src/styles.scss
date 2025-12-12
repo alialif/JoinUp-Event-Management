@@ -1,0 +1,57 @@
+/* Global CGI-inspired minimal theme */
+:root {
+	--color-bg: #f5f7fa;
+	--color-surface: #ffffff;
+	--color-border: #d9e0e7;
+	--color-text: #1f2d3d;
+	--color-accent: #0066cc;
+	--color-accent-hover: #0053a3;
+	--color-danger: #c0392b;
+	--radius-sm: 4px;
+	--shadow-sm: 0 1px 2px rgba(0,0,0,0.06);
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body, html {
+  margin:0;
+  padding:0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  background-image: url('/joinup_background.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30%;
+  background-attachment: fixed;
+}
+table { border-collapse: collapse; }
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.btn { display:inline-block; padding:0.5rem 0.9rem; font-size:0.8rem; border:none; border-radius:var(--radius-sm); cursor:pointer; background:var(--color-accent); color:#fff; transition:.15s background; }
+.btn:hover { background:var(--color-accent-hover); }
+.btn-danger { background: var(--color-danger); }
+.btn-danger:hover { filter:brightness(.9); }
+.btn[disabled] { opacity:.45; cursor:not-allowed; }
+
+.card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-sm); padding:1rem; box-shadow:var(--shadow-sm); }
+.table { width:100%; background:var(--color-surface); border:1px solid var(--color-border); }
+.table th, .table td { padding:0.55rem 0.75rem; border:1px solid var(--color-border); font-size:0.75rem; }
+.table th { background:#f0f3f7; text-align:left; }
+
+.layout-header { background:var(--color-surface); border-bottom:1px solid var(--color-border); padding:0.6rem 1rem; display:flex; align-items:center; gap:1rem; }
+.layout-header .brand { font-weight:600; cursor:pointer; }
+.layout-header nav a { margin-right:0.75rem; font-size:0.8rem; }
+
+.status-success { color:#2d6a2d; }
+.status-error { color:#c0392b; }
+
+/* Spinner */
+.spinner { width:26px; height:26px; border:3px solid var(--color-border); border-top-color: var(--color-accent); border-radius:50%; animation: spin 0.9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Toast container */
+.toast-container { position:fixed; top:1rem; right:1rem; display:flex; flex-direction:column; gap:0.5rem; z-index:1000; }
+.toast { background:var(--color-surface); border:1px solid var(--color-border); padding:0.6rem 0.85rem; font-size:0.7rem; box-shadow:var(--shadow-sm); border-left:4px solid var(--color-accent); }
+.toast.error { border-left-color: var(--color-danger); }
+
+/* You can add global styles to this file, and also import other style files */

@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "JoinUp Events Management",
+    "welcome": "Welcome to JoinUp",
+    "logout": "Logout",
+    "login": "Login",
+    "userName": "User"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Full Name",
+    "birthDate": "Birth Date",
+    "gender": "Gender",
+    "selectGender": "Select gender",
+    "genderMale": "Male",
+    "genderFemale": "Female",
+    "genderOther": "Other",
+    "genderPreferNotToSay": "Prefer not to say",
+    "loginButton": "Sign In",
+    "registerButton": "Register",
+    "registerTitle": "Register New Account",
+    "noAccount": "Don't have an account?",
+    "registerHere": "Register here",
+    "backToLogin": "Back to login",
+    "invalidCredentials": "Invalid credentials"
+  },
+  "events": {
+    "title": "Events",
+    "createEvent": "Create Event",
+    "eventTitle": "Event Title",
+    "description": "Description",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "maxRegistrations": "Max Registrations",
+    "capacity": "Capacity",
+    "categories": "Categories",
+    "categoryConference": "Conference",
+    "categoryWorkshop": "Workshop",
+    "categoryMeetup": "Meetup",
+    "categoryWebinar": "Webinar",
+    "price": "Price",
+    "priceFree": "Free",
+    "pricePaid": "Paid",
+    "register": "Register",
+    "empty": "No events available",
+    "save": "Save",
+    "cancel": "Cancel",
+    "detailTitle": "Event Detail",
+    "registeredCount": "Registered",
+    "registerSuccess": "Registration successful",
+    "registerError": "Registration failed",
+    "alreadyRegistered": "You are already registered",
+    "view": "View",
+    "participants": "Participants",
+    "role": "Role",
+    "promoteToStaff": "Promote to Staff"
+  },
+  "common": {
+    "loading": "Loading...",
+    "loginRequired": "Please login first",
+    "error": "An error occurred",
+    "success": "Operation successful"
+  },
+  "nav": {
+    "events": "Events",
+    "attendance": "Attendance",
+    "certificates": "Certificates",
+    "members": "Members",
+    "users": "Users"
+  },
+  "registrations": {
+    "title": "Registrations",
+    "register": "Register",
+    "registrationCode": "Registration Code",
+    "registeredOn": "Registered On",
+    "noRegistrations": "No registrations yet"
+  },
+  "attendance": {
+    "title": "Attendance",
+    "markAttendance": "Mark Attendance",
+    "attendedAt": "Attended At",
+    "noAttendance": "No attendance records"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "issueCertificate": "Issue Certificate",
+    "verifyCertificate": "Verify Certificate",
+    "certificateCode": "Certificate Code",
+    "verify": "Verify",
+    "valid": "Valid",
+    "invalid": "Invalid"
+  },
+  "members": {
+    "title": "Manage Users",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "birthDate": "Birth Date",
+    "promoteToStaff": "Promote to Staff",
+    "empty": "No members found",
+    "promoteSuccess": "Member promoted to staff successfully",
+    "promoteError": "Failed to promote member",
+    "roles": {
+      "participant": "Participant",
+      "staff": "Staff",
+      "admin": "Admin"
+    }
+  }
+}

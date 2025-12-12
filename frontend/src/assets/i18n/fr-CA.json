@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "JoinUp Gestion des événements",
+    "welcome": "Bienvenue à JoinUp",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "userName": "Utilisateur"
+  },
+  "auth": {
+    "email": "Courriel",
+    "password": "Mot de passe",
+    "name": "Nom complet",
+    "birthDate": "Date de naissance",
+    "gender": "Sexe",
+    "selectGender": "Sélectionnez le sexe",
+    "genderMale": "Masculin",
+    "genderFemale": "Féminin",
+    "genderOther": "Autre",
+    "genderPreferNotToSay": "Préfère ne pas répondre",
+    "loginButton": "Se connecter",
+    "registerButton": "S'inscrire",
+    "registerTitle": "Créer un nouveau compte",
+    "noAccount": "Vous n'avez pas de compte?",
+    "registerHere": "Inscrivez-vous ici",
+    "backToLogin": "Retour à la connexion",
+    "invalidCredentials": "Identifiants invalides"
+  },
+  "events": {
+    "title": "Événements",
+    "createEvent": "Créer un événement",
+    "eventTitle": "Titre de l'événement",
+    "description": "Description",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "maxRegistrations": "Inscriptions maximales",
+    "capacity": "Capacité",
+    "categories": "Catégories",
+    "categoryConference": "Conférence",
+    "categoryWorkshop": "Atelier",
+    "categoryMeetup": "Rencontre",
+    "categoryWebinar": "Webinaire",
+    "price": "Prix",
+    "priceFree": "Gratuit",
+    "pricePaid": "Payant",
+    "register": "S'inscrire",
+    "empty": "Aucun événement disponible",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "detailTitle": "Détail de l'événement",
+    "registeredCount": "Inscrits",
+    "registerSuccess": "Inscription réussie",
+    "registerError": "Échec de l'inscription",
+    "alreadyRegistered": "Vous êtes déjà inscrit",
+    "view": "Voir",
+    "participants": "Participants",
+    "role": "Rôle",
+    "promoteToStaff": "Promouvoir en staff"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "loginRequired": "Veuillez vous connecter",
+    "error": "Une erreur est survenue",
+    "success": "Opération réussie"
+  },
+  "nav": {
+    "events": "Événements",
+    "attendance": "Présence",
+    "certificates": "Certificats",
+    "members": "Membres",
+    "users": "Utilisateurs"
+  },
+  "registrations": {
+    "title": "Inscriptions",
+    "register": "S'inscrire",
+    "registrationCode": "Code d'inscription",
+    "registeredOn": "Inscrit le",
+    "noRegistrations": "Aucune inscription"
+  },
+  "attendance": {
+    "title": "Présence",
+    "markAttendance": "Marquer la présence",
+    "attendedAt": "Présent le",
+    "noAttendance": "Aucune présence enregistrée"
+  },
+  "certificates": {
+    "title": "Certificats",
+    "issueCertificate": "Émettre un certificat",
+    "verifyCertificate": "Vérifier un certificat",
+    "certificateCode": "Code du certificat",
+    "verify": "Vérifier",
+    "valid": "Valide",
+    "invalid": "Invalide"
+  },
+  "members": {
+    "title": "Gérer les utilisateurs",
+    "name": "Nom",
+    "email": "Courriel",
+    "role": "Rôle",
+    "birthDate": "Date de naissance",
+    "promoteToStaff": "Promouvoir en staff",
+    "empty": "Aucun membre trouvé",
+    "promoteSuccess": "Membre promu en staff avec succès",
+    "promoteError": "Échec de la promotion",
+    "roles": {
+      "participant": "Participant",
+      "staff": "Staff",
+      "admin": "Administrateur"
+    }
+  }
+}
