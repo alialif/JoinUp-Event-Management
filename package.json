@@ -1,0 +1,26 @@
+{
+  "name": "joinup-event-management",
+  "version": "1.0.0",
+  "description": "**🤖 100% AI-Generated Application**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alialif/JoinUp-Event-Management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alialif/JoinUp-Event-Management/issues"
+  },
+  "homepage": "https://github.com/alialif/JoinUp-Event-Management#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}
